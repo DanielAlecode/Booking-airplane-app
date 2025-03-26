@@ -1,0 +1,49 @@
+
+
+.Passengers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+  }
+  
+  .Passengers input {
+    font-size: 1rem;
+    margin: 16px 0;
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .Passengers-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    margin-top: 8px;
+  }
+  
+  .Passengers-title {
+    margin-bottom: 16px;
+  }
+  
+
+.button{
+    background: #293684;
+    color: white;
+    border: none;
+    font: bold;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: auto;
+  }
+
+  .button:hover{
+    background: #4e599b;
+    color: white;
+    cursor: pointer;
+  }
