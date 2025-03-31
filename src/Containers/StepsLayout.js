@@ -20,7 +20,7 @@ const StepsLayout = ({ state, send }) => {
 
   return (
     <div className='StepsLayout'>
-      {StepComponent ? <StepComponent send={send} /> : null}
+      {StepComponent ? <StepComponent state={state} send={send} /> : null}
     </div>
   );
 };

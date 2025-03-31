@@ -7,8 +7,7 @@ import { Nav } from "../Components/Nav";
 
 const BaseLayout = () => {
     const [state, send] = useMachine(bookingMachine);
-
-    console.log('state', state);
+    console.log("state", state.context)
     return (
         <div className='BaseLayout'>
             <Nav state={state} send={send}/>

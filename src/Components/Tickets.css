@@ -1,76 +1,60 @@
 .Tickets {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .Tickets-finalizar {
-    margin-left: auto;
-  }
-  
-  .Tickets-ticket {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    margin-bottom: 16px;
-  }
+  max-width: 500px;
+  margin: 3rem auto;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
 
-  .button{
-    background: rgba(255, 255, 255, 0.912);
-    color: #293684;
-    border: none;
-    font: bold;
-    width: 100px;
-    height: 30px;
-    border-radius: 10px;
-  }
+.Tickets-description {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
 
-  .button:hover{
-    background: #4e599b;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .Tickets-country {
-    background-color: white;
-    padding: 16px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-right: 1px dashed #4F54A7;
-  }
-  
-  .Tickets-passengers {
-    background-color: rgba(151, 149, 240, 0.5);
-    padding: 16px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    border-left: 1px dashed #4F54A7;
-  }
-  
-  .Tickets-passengers p {
-    margin: 2px;
-  }
-  
-  .Tickets-passengers span {
-    position: absolute;
-    top: -10px;
-    right: 10px;
-    font-size: 60px;
-    color: #4F54A7;
-    transform: rotate(-45deg);
-  }
+.Tickets-ticket {
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Tickets-country {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.Tickets-passengers {
+  text-align: left;
+  background-color: rgba(255,255,255,0.2);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.Tickets-passenger {
+  padding: 0.3rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.Tickets-finalizar {
+  background-color: #e74c3c;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.Tickets-finalizar:hover {
+  background-color: #c0392b;
+}
